@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&family=Roboto:ital,wght@1,300&display=swap');
+
+nav{
+    padding-top: 0px;
+    background-color: lightblue;
+    color: white;
+    height: 60px;
+    font-size: 33px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.bbord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0cm;
+}
+
+.bord{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+
+.box{
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    align-items: center;
+    font-size: 6vw;
+}
+
+.box:hover{
+    background-color: rgb(228, 226, 258);              
+}
+
+
+.heading {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.smallinfo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: x-large;
+    padding-right: 100px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.span{
+    padding-right: 10px;
+    position: relative;
+    top: 100px;
+}
+
+.button{
+    padding-left: 10px;
+    position: relative;
+    top: 100px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#reset {
+    background: rgb(236, 236, 245);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+.bt-0{
+    border-top: 0px;
+}
+
+.bl-0{
+    border-left: 0px;
+}
+
+.br-0{
+    border-right: 0px;
+}
+
+.bb-0{
+    border-bottom: 0px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #a04d4d;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #4b1313;
+}
+
+#winner-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.close {
+    display: none;
+}
+
+.popup-content {
+    background: rgb(228, 226, 258);
+    padding: 40px; /* Increase padding to increase size */
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
