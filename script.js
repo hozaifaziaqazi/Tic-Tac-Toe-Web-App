@@ -28,6 +28,11 @@ const checkWin = () => {
             displayPopup(winner); // Display popup when there's a winner
         }
     });
+        // Check for draw
+        if (!winner && Array.from(boxtext).every(box => box.innerText !== "")) {
+            isgameover = true;
+            displayPopup("It's a Draw!"); // Display draw message
+        }
 
     return winner;
 }
@@ -77,3 +82,17 @@ const closePopup = () => {
     const popup = document.getElementById("popup");
     popup.style.display = "none";
 }
+
+// Add onclick listener to ok button
+okButton.addEventListener('click', () => {
+    let boxtexts = document.querySelectorAll('.boxtext');
+    Array.from(boxtexts).forEach(element => {
+        element.innerText = ""
+    });
+    turn = "X";
+    isgameover = false;
+    document.querySelector(".line").style.width = "0vw";
+    document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
+})
+
